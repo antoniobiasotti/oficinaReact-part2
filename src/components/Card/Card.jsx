@@ -25,7 +25,7 @@ export const Card = ({
         <div className={styles.info}>
           <p>
             <span>Population: </span>
-            {population}
+            {population.toLocaleString("pt-BR")}
           </p>
           <p>
             <span>Region: </span>

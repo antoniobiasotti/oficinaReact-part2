@@ -15,7 +15,7 @@ export default function Home() {
         <Card
           imagePath={"https://flagcdn.com/be.svg"}
           country={"Belgium"}
-          population={"11555997"}
+          population={11555997}
           region={"Europe"}
           capital={"Brussels"}
         />
