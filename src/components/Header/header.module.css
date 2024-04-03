@@ -21,3 +21,8 @@
   align-items: center;
   gap: 5px;
 }
+
+.darkMode span:hover {
+  cursor: pointer;
+  color: #4d0011;
+}
