@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  height: 336px;
+  border-radius: 5px;
+  background: #2b3844;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+  gap: 20px;
+  cursor: pointer;
+}
+.img {
+  object-fit: cover;
+}
+.container img {
+  border-radius: 5px 5px 0px 0px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: center;
+  width: 85%;
+}
+.h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.info span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+.info p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+}
