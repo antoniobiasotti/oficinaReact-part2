@@ -1,5 +1,6 @@
 import styles from "./modal.module.css";
 import Image from "next/image";
+import { ArrowLeft } from "@phosphor-icons/react";
 
 export const Modal = ({
     imagePath,
@@ -15,6 +16,7 @@ export const Modal = ({
     return (
         <section className={styles.modalBody}>
             <button onClick={closeModal}>
+                <ArrowLeft size={32} />
                 Back
             </button>
             <div className={styles.image}>
