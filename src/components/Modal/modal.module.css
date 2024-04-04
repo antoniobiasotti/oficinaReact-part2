@@ -26,5 +26,5 @@
 }
 
 .modalBody button:hover{
-    background-color: var(--modal-button-color);
+    background-color: var(--modal-button-color2);
 }
