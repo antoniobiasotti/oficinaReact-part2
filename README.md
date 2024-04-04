@@ -37,3 +37,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Adicionando último Componente e Finalizando o projeto
 - Modal
+- Descrição: Para esse componente vamos utilizar o useState do React pois dessa forma conseguiremos manipular a lógica de estado do Modal e também do Card e controlar se vamos exibir ou ocultar ele da tela.
+- E por cima disso, vamos usar uma callback function pois assim, podemos passá-la como parâmetro para outra função, no caso é a própria openModal() que setar o país selecionado.
