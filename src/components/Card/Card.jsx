@@ -8,9 +8,11 @@ export const Card = ({
   region,
   capital,
   code,
+  key,
+  createModal,
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={createModal}>
       <div className={styles.image}>
         <Image
           src={imagePath}
