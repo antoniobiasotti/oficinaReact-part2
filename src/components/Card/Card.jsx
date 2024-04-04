@@ -9,7 +9,7 @@ export const Card = ({
   capital,
   code,
   key,
-  createModal,
+  onClick,
 }) => {
   return (
     <div className={styles.container} onClick={createModal}>

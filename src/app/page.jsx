@@ -11,15 +11,13 @@ import { useState, useEffect } from "react";
 
 import styles from "./page.module.css";
 import { Card } from "@/components/Card/Card";
-
-export const createModal = () => {
-  return (
-  console.log("oi")
-  );
-}
+import { Modal } from "@/components/Modal/Modal";
 
 export default function Home() {
   const [countries, setCountries] = useState([]);
+
+  const [selectedCountry, setSelectedCountry] = useState(null);
+
   
   // Montar o objeto, passar o segundo parâmetro como vazio
   useEffect(() => {
@@ -30,24 +28,34 @@ export default function Home() {
     }
     fetchData();
   }, []);
-  
+
+  const openModal = (country) => { 
+    setSelectedCountry(country); // "Avisa" a home qual o país selecionado pelo useState
+  };
+
+  const closeModal = () => {
+    setSelectedCountry(null); // Limpa o país selecionado
+  }
+
   return (
     <main className={styles.main}>
       <div className={styles.container}>
         {countries.map((country, index) => {
           return (
             <Card
-            imagePath={country.flag}
-            name={country.name}
-            population={country.population}
-            region={country.region}
-            capital={country.capital}
-            flag={country.flag}
-            code={country.code}
-            key={index}
-            createModal={createModal}
+              imagePath={country.flag}
+              name={country.name}
+              population={country.population}
+              region={country.region}
+              capital={country.capital}
+              flag={country.flag}
+              code={country.code}
+              key={index}
+              openModal={() => openModal(country)} //callback function -> chama a openModal para setar o país clickado, ou seja, diferente de nulo
+              closeModal={() => closeModal}
             />
-            );
+            )
+            <Modal/>
           })}
       </div>
     </main>
