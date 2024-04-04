@@ -52,12 +52,22 @@ export default function Home() {
               code={country.code}
               key={index}
               openModal={() => openModal(country)} //callback function -> chama a openModal para setar o país clickado, ou seja, diferente de nulo
-              closeModal={() => closeModal}
             />
             )
-            <Modal/>
           })}
       </div>
+      {selectedCountry && (
+            <Modal
+              imagePath={selectedCountry.flag}
+              name={selectedCountry.name}
+              population={selectedCountry.population}
+              region={selectedCountry.region}
+              capital={selectedCountry.capital}
+              flag={selectedCountry.flag}
+              code={selectedCountry.code}
+              closeModal={() => closeModal()}
+            />
+      )}
     </main>
   );
 }

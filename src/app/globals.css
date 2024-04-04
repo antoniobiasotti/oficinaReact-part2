@@ -1,6 +1,8 @@
 :root {
   --background-color: #202c36;
   --title-color: #ffff;
+  --modal-color: #5D6D7E;
+  --modal-button-color: #2B3844;
 }
 
 * {
