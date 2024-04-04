@@ -16,8 +16,12 @@
 }
 
 .modalBody button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: var(--title-color);
     background-color: var(--modal-button-color);
+    font-size: medium;
 
     cursor: pointer;
 

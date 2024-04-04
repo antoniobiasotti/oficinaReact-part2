@@ -16,7 +16,7 @@ export const Modal = ({
     return (
         <section className={styles.modalBody}>
             <button onClick={closeModal}>
-                <ArrowLeft size={32} />
+                <ArrowLeft size={22} />
                 Back
             </button>
             <div className={styles.image}>
