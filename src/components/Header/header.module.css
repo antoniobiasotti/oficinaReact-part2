@@ -25,4 +25,5 @@
 .darkMode span:hover {
   cursor: pointer;
   color: #4d0011;
+  font-weight: bold;
 }
