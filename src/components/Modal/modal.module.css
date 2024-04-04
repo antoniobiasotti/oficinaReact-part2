@@ -1,13 +1,12 @@
 .modalBody {
-    background-color: var(--modal-color);
+    background-color: var(--modal-button-color);
 
-    display: flex;
     flex-direction: column;
     position: fixed;
-    top: 50;
-    left: 50;
-    width: 35vw;
-    height: 50dvh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
     justify-content: center;
     align-items: center;
 
@@ -21,14 +20,32 @@
     gap: 5px;
     color: var(--title-color);
     background-color: var(--modal-button-color);
-    font-size: medium;
+    
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
 
     cursor: pointer;
-
+    
     padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
+    font-size: medium;
 }
 
 .modalBody button:hover{
     background-color: var(--modal-button-color2);
+}
+
+.modalContent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 1rem;
+    
+}
+
+.info p {
+    margin-top: 1rem;
 }
