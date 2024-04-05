@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100dvh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 
@@ -21,9 +21,7 @@
     color: var(--title-color);
     background-color: var(--modal-button-color);
     
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
 
     cursor: pointer;
     
@@ -38,17 +36,20 @@
 
 .modalContent {
     display: flex;
-    justify-content: space-between;
-    gap: 8px;
+    gap: 20%; 
 
     padding: 1rem;
     
 }
 
 .info {
-    display: block;
-    justify-content: space-between;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide em duas colunas de largura igual */
+    gap: 10px; /* Espaçamento entre as colunas */
+}
+
+.info h2 {
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
 }
 
 .info p {

@@ -32,7 +32,7 @@ export const Modal = ({
                     />
                 </div>
                 <div className={styles.info}>
-                    <h2>Nome do País</h2>
+                <h2>Nome do País</h2>
                         <div>
                             <p>
                                 <span>Native name: </span>
@@ -73,6 +73,12 @@ export const Modal = ({
                                 {region}
                             </p>
                         </div>
+                        <footer>
+                            <p>
+                                <span>Border Countries: </span>
+                                {region}
+                            </p>
+                        </footer>
                 </div>
             </div>
         </section>
