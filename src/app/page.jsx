@@ -47,7 +47,9 @@ export default function Home() {
               name={country.name}
               population={country.population}
               region={country.region}
+              subregion={country.subregion}
               capital={country.capital}
+              topleveldomain={country.topLevelDomain}
               flag={country.flag}
               code={country.code}
               key={index}
@@ -62,7 +64,9 @@ export default function Home() {
               name={selectedCountry.name}
               population={selectedCountry.population}
               region={selectedCountry.region}
+              subregion={selectedCountry.subregion}
               capital={selectedCountry.capital}
+              topleveldomain={selectedCountry.topLevelDomain}
               flag={selectedCountry.flag}
               code={selectedCountry.code}
               closeModal={() => closeModal()}

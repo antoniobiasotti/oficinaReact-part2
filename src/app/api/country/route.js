@@ -8,7 +8,9 @@ export async function GET() {
         name: country.name,
         population: country.population,
         region: country.region,
+        sugregion: country.subregion,
         capital: country.capital,
+        topleveldomain: country.topLevelDomain,
         flag: country.flags.svg,
         code: country.numericCode,
       };

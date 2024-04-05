@@ -4,10 +4,13 @@ import { ArrowLeft } from "@phosphor-icons/react";
 
 export const Modal = ({
     imagePath,
-    country,
+    name,
     population,
     region,
+    subregion,
     capital,
+    topleveldomain,
+    currencieSymbol,
     code,
     key,
     index,
@@ -32,11 +35,11 @@ export const Modal = ({
                     />
                 </div>
                 <div className={styles.info}>
-                    <h2>Nome do País</h2>
+                    <h2>{name}</h2>
                         <div>
                             <p>
                                 <span>Native name: </span>
-                                {region}
+                                {name}
                             </p>
                             <p>
                                 <span>Population: </span>
@@ -48,21 +51,21 @@ export const Modal = ({
                             </p>
                             <p>
                                 <span>Sub Region: </span>
-                                {capital}
+                                {subregion}
                             </p>
                             <p>
                                 <span>Capital: </span>
-                                    {region}
+                                {capital}
                             </p>
                         </div>
                         <div>    
                             <p>
                                 <span>Top level Domain: </span>
-                                {region}
+                                {topleveldomain}
                             </p>
                             <p>
                                 <span>Currencies: </span>
-                                {region}
+                                {currencieSymbol}
                             </p>
                             <p>
                                 <span>Languages: </span>
