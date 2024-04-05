@@ -33,46 +33,46 @@ export const Modal = ({
                 </div>
                 <div className={styles.info}>
                     <h2>Nome do País</h2>
-                    <div>
-                        <p>
-                            <span>Native name: </span>
-                            {region}
-                        </p>
-                        <p>
-                            <span>Population: </span>
-                            {population.toLocaleString("pt-BR")}
-                        </p>
-                        <p>
-                            <span>Region: </span>
-                            {region}
-                        </p>
-                        <p>
-                            <span>Sub Region: </span>
-                            {capital}
-                        </p>
-                        <p>
-                            <span>Capital: </span>
+                        <div>
+                            <p>
+                                <span>Native name: </span>
                                 {region}
-                        </p>
-                    </div>
-                    <div>    
-                        <p>
-                            <span>Top level Domain: </span>
-                            {region}
-                        </p>
-                        <p>
-                            <span>Currencies: </span>
-                            {region}
-                        </p>
-                        <p>
-                            <span>Languages: </span>
-                            {region}
-                        </p>
-                        <p>
-                            <span>Border Countries: </span>
-                            {region}
-                        </p>
-                    </div>
+                            </p>
+                            <p>
+                                <span>Population: </span>
+                                {population.toLocaleString("pt-BR")}
+                            </p>
+                            <p>
+                                <span>Region: </span>
+                                {region}
+                            </p>
+                            <p>
+                                <span>Sub Region: </span>
+                                {capital}
+                            </p>
+                            <p>
+                                <span>Capital: </span>
+                                    {region}
+                            </p>
+                        </div>
+                        <div>    
+                            <p>
+                                <span>Top level Domain: </span>
+                                {region}
+                            </p>
+                            <p>
+                                <span>Currencies: </span>
+                                {region}
+                            </p>
+                            <p>
+                                <span>Languages: </span>
+                                {region}
+                            </p>
+                            <p>
+                                <span>Border Countries: </span>
+                                {region}
+                            </p>
+                        </div>
                 </div>
             </div>
         </section>

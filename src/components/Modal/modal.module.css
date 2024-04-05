@@ -37,15 +37,20 @@
 }
 
 .modalContent {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 8px;
 
     padding: 1rem;
     
 }
 
+.info {
+    display: block;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
 .info p {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
