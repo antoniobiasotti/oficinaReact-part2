@@ -34,3 +34,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Adicionando último Componente e Finalizando o projeto
+- Modal
+- Descrição: Para esse componente vamos utilizar o useState do React pois dessa forma conseguiremos manipular a lógica de estado do Modal e também do Card e controlar se vamos exibir ou ocultar ele da tela.
+- E por cima disso, vamos usar uma callback function pois assim, podemos passá-la como parâmetro para outra função, no caso é a própria openModal() que setar o país selecionado.
